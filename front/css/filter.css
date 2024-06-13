@@ -5,35 +5,67 @@
     width: 100%;
 }
 
-.filter-form{
+.filter-form {
     position: relative;
     min-height: 50px;
     max-width: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Забезпечує однорядне розташування */
+    justify-content: space-between; /* Вирівнює простір між елементами */
     align-items: center;
-    background-color: #cfcfcf;
+    background-color: #f2f5f5;
     margin: 0;
     padding: 4px 2px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
 }
 
-.filter-category{
-    flex: 1 1 auto;
+.filter-category, .filter-sort, .filter-search {
     margin: 1px 2px;
-    max-width: 100%;
 }
 
-.filter-search{
-    flex: 4 1 auto;
-    margin: 1px 2px;
-    max-width: 100%;
+.filter-category, .filter-sort {
+    flex: 0 1 auto; /* Пропорційне зміщення */
+    order: 0; /* Порядок розташування на початку */
+    width: auto; /* Автоматична ширина для select */
 }
 
-.filter-sort{
-    flex: 1 1 auto;
-    margin: 1px 2px;
-    max-width: 100%;
+.filter-search {
+    flex: 1 1 auto; /* Пропорційне зміщення */
+    order: 1; /* Порядок розташування в кінці */
+    width: auto; /* Автоматична ширина для input */
 }
+
+/* Додатково можна налаштувати ширину select і input */
+.filter-category select, .filter-sort select {
+    width: 250px; /* Ширина для select */
+}
+
+.filter-search input {
+    width: 300px; /* Ширина для input */
+}
+
+.filter-search input, .filter-category select, .filter-sort select {
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+/* Медиа-запит для малих екранів */
+@media (max-width: 815px) {
+    .filter-form {
+        flex-direction: column; /* Вертикальне розташування елементів */
+        align-items: stretch; /* Розтягнення елементів */
+    }
+
+    .filter-category, .filter-sort, .filter-search {
+        width: 100%; /* Максимальна ширина елементів */
+        margin: 5px 0; /* Відступи між елементами */
+    }
+
+    .filter-category select, .filter-sort select, .filter-search input {
+        width: 100%; /* Максимальна ширина для select і input */
+    }
+}
+

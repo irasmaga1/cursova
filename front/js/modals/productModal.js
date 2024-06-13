@@ -24,7 +24,7 @@ const productModalContent = `<form name="productForm" enctype="multipart/form-da
         </tr>
         <tr>
             <td class="form-label"><label for="productVolume">Weight:</label> </td>
-            <td class="form-input"><input type="number" name="productVolume" id="productVolume" class="form-control" min="20" max="2000" required></td>
+            <td class="form-input"><input type="number" name="productVolume" id="productVolume" class="form-control" required></td>
         </tr>
         <tr>
             <td class="form-label"><label for="productMaterial">Type od feed:</label> </td>
@@ -40,10 +40,6 @@ const productModalContent = `<form name="productForm" enctype="multipart/form-da
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td class="form-image-container">
-                <img class="form-image" id="formImage" >
-            </td>
         </tr>
         <tr>
             <td class="form-label"><label for="productImage">Image:</label> </td>

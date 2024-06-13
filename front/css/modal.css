@@ -33,26 +33,28 @@
 
 .modal-title {
     font-size: 1.5rem;
-    color: #2196F3;
+    color: black;
 }
 .modal-close-btn {
     width: 36px;
     text-align: center;
     font-weight: 200;
-    background-color: rgb(221, 221, 221);
-    border: 1px solid rgb(184, 184, 184);
+    /* background-color: rgb(221, 221, 221); */
+    /* border: 1px solid rgb(184, 184, 184); */
+    font-style: bold;
     border-radius: 5px;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-.modal-close-btn:hover {
+/* .modal-close-btn:hover {
     background-color: rgb(197, 197, 197);
     border: 1px solid rgb(160, 160, 160);
-}
+} */
 
 .modal-content {
     padding: 10px 10px;
+    border-top: 3px solid black;
 }
 
 .modal-footer {
@@ -114,4 +116,12 @@
 
 .form-image {
     padding-right: 30px;
+}
+td{
+    font-weight: bold;
+    font-size: 20px;
+}
+input{
+    padding: 10px 10px;
+    border: 3px solid black;
 }

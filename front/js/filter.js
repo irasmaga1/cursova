@@ -8,12 +8,10 @@ export const renderFiltration = () => {
                     <select class="form-select" id="filter-category" >
                     </select>
                 </div>
-                <div class="filter-search">
-                    <input class="form-control" id="filter-search" type="text" placeholder="-- search product --" >
-                </div>
+               
                 <div class="filter-sort">
                     <select class="form-select" id="filter-sort">
-                        <option selected value="nosort">-- sort products (Don't sort) --</option>
+                        <option selected value="nosort"> Don't sort </option>
                         <option value="incPr">by increasing price</option>
                         <option value="decPr">by decreasing price</option>
                         <option value="incVl">by increasing volume</option>
@@ -22,6 +20,10 @@ export const renderFiltration = () => {
                         <option value="of">oldest first</option>
                       </select>
                 </div>
+                 <div class="filter-search">
+                    <input class="form-control" id="filter-search" type="text" placeholder="Search..." >
+                </div>
+                
             </form>`;
     // Навішуємо обробники
     // Фільтація по категоріях
@@ -42,7 +44,7 @@ export const  renderFilterCategoriesOptions = (categories) => {
     // defaultProductCategoryOption.setAttribute("disabled", "");
     defaultProductCategoryOption.setAttribute("selected", "");
     defaultProductCategoryOption.setAttribute("value", "all");
-    defaultProductCategoryOption.innerText = ` -- select a category (All categories) -- `;
+    defaultProductCategoryOption.innerText = `Select a category`;
     filterCategory.appendChild(defaultProductCategoryOption);
     // Вибираємо категорії товарів з LS
     // const categoryArr = getCategories();

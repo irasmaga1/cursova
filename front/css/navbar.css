@@ -10,8 +10,8 @@
     flex-wrap: wrap;
     width: 100vw;
     height: 60px;
-    background-color: rgb(108, 117, 125);
-    color: white;
+    background-color: #f2f5f5;
+    color: black;
     caret-color: transparent;
 }
 
@@ -25,7 +25,7 @@
 } 
 
 .navbar-bg-body {
-    background-color: rgba(108, 117, 125, 0.8);
+    background-color: #f2f5f5;
 }
 
 /* Перевизначення параметрів bootstrap */
@@ -40,7 +40,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #f9fafb;
+    color: black;
 }
 
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
@@ -55,9 +55,9 @@
     align-items: center;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+/* .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #ffc155;
-}
+} */
 
 .navbar-nav {
     align-items: flex-end;
@@ -78,10 +78,11 @@
 }
 
 .site-name-item{
-    padding-right: 5px;
+    padding-left: 50px;
 }
 .shop-name{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
 }
 
@@ -125,7 +126,7 @@
 }
 
 .user-name {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-size: 1rem;
     font-weight: normal;
     text-transform: uppercase;
@@ -140,9 +141,9 @@
     cursor: pointer;
 }
 
-.navbar-cart-icon:hover {
+/* .navbar-cart-icon:hover {
     color: #f9a921;
-}
+} */
 
 .navbar-cart-icon-count {
     display: none;

@@ -31,7 +31,7 @@
     caret-color: transparent;
 }
 
-.product-category{
+.product-category {
     background-color: rgb(108, 117, 125, 0.75);
     border-radius: 3px;
     font-size: 1.2rem;
@@ -41,9 +41,9 @@
     top: 45px;
     left: -10px;
     transform: skewX(-20deg);
-    
 }
-.product-category-text{
+
+.product-category-text {
     text-align: center;
     transform: skewX(20deg);
 }
@@ -54,11 +54,11 @@
     padding-bottom: 5px;
 }
 
-.product-text{
+.product-text {
     font-size: 0.9em;
 }
 
-.product-price{
+.product-price {
     color: #495057;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
@@ -66,7 +66,7 @@
     padding: 0 15px;
 }
 
-.product-footer{
+.product-footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -74,7 +74,7 @@
     caret-color: transparent;
 }
 
-.product-manage-btns{
+.product-manage-btns {
     display: flex;
 }
 
@@ -89,4 +89,48 @@
     font-size: 1.5rem;
     padding: 0 20px;
     cursor: pointer;
+}
+
+#submitProductBtn {
+    background-color: black;
+    color: #f2f5f5;
+}
+
+#cancelProductBtn {
+    background-color: #f2f5f5;
+    color: black;
+}
+
+#submitProductBtn, #cancelProductBtn, #submitLoginBtn,#submitRegistrationtBtn {
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 130px;
+}
+#submitLoginBtn,#submitRegistrationtBtn{
+    background-color: #f2f5f5;
+    color: black;
+}
+
+
+/* Apply border style to all input and select fields */
+.form-control, .form-select {
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+/* Apply styles for form elements to adjust for responsiveness */
+@media (max-width: 815px) {
+    .filter-form {
+        flex-direction: column; /* Вертикальне розташування елементів */
+        align-items: stretch; /* Розтягнення елементів */
+    }
+
+    .filter-category, .filter-sort, .filter-search {
+        width: 100%; /* Максимальна ширина елементів */
+        margin: 5px 0; /* Відступи між елементами */
+    }
+
+    .filter-category select, .filter-sort select, .filter-search input {
+        width: 100%; /* Максимальна ширина для select і input */
+    }
 }
