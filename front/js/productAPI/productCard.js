@@ -19,7 +19,7 @@ export const productCardRender = (product) => {
                                         <div><img src="${product.image}" class="product-img"></div>
                                         <div class="product-category"><div class="product-category-text">${category.name}</div></div>
                                         <div class="product-name">${product.name}</div>
-                                        <div class="product-text">Volume: <span class="product-volume">${product.volume}</span> ml</div> 
+                                        <div class="product-text">Weight: <span class="product-volume">${product.weight}</span> ml</div> 
                                         <div class="product-text">Material: <span class="product-material">${product.material}</span></div>
                                             
                                     </div>`;

@@ -53,15 +53,15 @@ export const createAndEditProduct = async (req, res) => {
                     }
                   }
                                
-                const { productId, producCategory, productName, productVolume, productMaterial, productPrice, oldCloudinaryPublicId, oldImagePath } = fields;
+                const { productId, productCategory, productName, productWeight, productMaterial, productPrice, oldCloudinaryPublicId, oldImagePath } = fields;
                 const { productImage: [{ filepath }] } = files;
                 const { productImage: [{ originalFilename }] } = files;
                 
                 // Починаємо формувати об'єкт для запису в БД
                 const productData = {
-                    category: producCategory,
+                    category: productCategory,
                     name: productName,        
-                    volume: productVolume,
+                    weight: productWeight,
                     material:productMaterial,
                     price:productPrice
                 };
@@ -130,10 +130,10 @@ export const getAllProducts = async (req, res) => {
             sortObj.price = -1;
             break;
         case req.query.sort === 'incVl' :
-            sortObj.volume = 1;
+            sortObj.weight = 1;
             break;
         case req.query.sort === 'decVl' :
-            sortObj.volume = -1;
+            sortObj.weight = -1;
             break;
         case req.query.sort === 'nf' :
             sortObj._id = -1;

@@ -86,16 +86,16 @@ export const editProduct = (product) => {
     convertModalToEdit();
     renderProductCategoriesOptions();
     // Шукаємо, яка прийшла категорія, і вибираємо її
-    const categoryListBox = document.querySelector('#producCategory');
+    const categoryListBox = document.querySelector('#productCategory');
     const options = Array.from(categoryListBox.options);
     const optionToSelect = options.find(item => item.text === product.category.name);
     optionToSelect.selected = true;
     document.getElementById('productId').value = product._id;
     document.getElementById('productName').value = product.name;
-    document.getElementById('productVolume').value = product.volume;
+    document.getElementById('productWeight').value = product.weight;
     document.getElementById('productMaterial').value = product.material;
     document.getElementById('productPrice').value = product.price;
-    document.getElementById('formImage').setAttribute("src", product.image) ;
+    // document.getElementById('formImage').setAttribute("src", product.image) ;
     document.getElementById('oldCloudinaryPublicId').value = product.cloud;
     document.getElementById('oldImagePath').value = product.image;
     productModal.open();

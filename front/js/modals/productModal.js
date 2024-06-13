@@ -12,9 +12,9 @@ const productModalContent = `<form name="productForm" enctype="multipart/form-da
     <input type="hidden" name="oldImagePath" id="oldImagePath">
     <table class="form-table">
         <tr>
-            <td class="form-label"><label for="producCategory">Category:</label> </td>
+            <td class="form-label"><label for="productCategory">Category:</label> </td>
             <td class="form-input">
-                <select name="producCategory" id="producCategory" class="form-select" required>
+                <select name="productCategory" id="productCategory" class="form-select" required>
                 </select>
             </td>
         </tr>
@@ -23,8 +23,8 @@ const productModalContent = `<form name="productForm" enctype="multipart/form-da
             <td class="form-input"><input type="text" name="productName" id="productName" class="form-control" required></td>
         </tr>
         <tr>
-            <td class="form-label"><label for="productVolume">Weight:</label> </td>
-            <td class="form-input"><input type="number" name="productVolume" id="productVolume" class="form-control" required></td>
+            <td class="form-label"><label for="productWeight">Weight:</label> </td>
+            <td class="form-input"><input type="number" name="productWeight" id="productWeight" class="form-control" required></td>
         </tr>
         <tr>
             <td class="form-label"><label for="productMaterial">Type od feed:</label> </td>
@@ -98,7 +98,7 @@ document.forms["productForm"].addEventListener ('submit', (e) => {
 export const renderProductCategoriesOptions = () =>  {
     
     // Вибираємо select модалкки продуктів i очищуємо його
-    const producCategory = document.getElementById('producCategory');
+    const producCategory = document.getElementById('productCategory');
     // console.log('producCategory', producCategory);
     producCategory.innerHTML = ``;
     // Додаємо в нього опцію по замовчуванню 
