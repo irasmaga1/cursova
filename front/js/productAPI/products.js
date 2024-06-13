@@ -15,7 +15,7 @@ export const  btnRender = () => {
     // Якщо адміністратор - малюємо кнопку "Створити продукт"
     
     if ( user && user.isAdmin) {
-        btnContainer.innerHTML = `<button type="button" class="btn btn-secondary" id="createBtn">Create New Product</button>`;
+        btnContainer.innerHTML = `<button type="button" class="btn btn-secondary" id="createBtn">New Product</button>`;
     }
     attachEventHandler('createBtn', 'click', openProductModalWithCreate);
 }
@@ -93,7 +93,7 @@ export const editProduct = (product) => {
     document.getElementById('productId').value = product._id;
     document.getElementById('productName').value = product.name;
     document.getElementById('productWeight').value = product.weight;
-    document.getElementById('productMaterial').value = product.material;
+    document.getElementById('productFood').value = product.food;
     document.getElementById('productPrice').value = product.price;
     // document.getElementById('formImage').setAttribute("src", product.image) ;
     document.getElementById('oldCloudinaryPublicId').value = product.cloud;

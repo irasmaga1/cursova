@@ -53,7 +53,7 @@ export const createAndEditProduct = async (req, res) => {
                     }
                   }
                                
-                const { productId, productCategory, productName, productWeight, productMaterial, productPrice, oldCloudinaryPublicId, oldImagePath } = fields;
+                const { productId, productCategory, productName, productWeight, productFood, productPrice, oldCloudinaryPublicId, oldImagePath } = fields;
                 const { productImage: [{ filepath }] } = files;
                 const { productImage: [{ originalFilename }] } = files;
                 
@@ -62,7 +62,7 @@ export const createAndEditProduct = async (req, res) => {
                     category: productCategory,
                     name: productName,        
                     weight: productWeight,
-                    material:productMaterial,
+                    food:productFood,
                     price:productPrice
                 };
                                   
@@ -156,7 +156,7 @@ export const getAllProducts = async (req, res) => {
     if (req.query.search) {
         filterObj.$or = [
             { name:  { $regex: new RegExp(req.query.search, "i") } },
-            { material: { $regex: new RegExp(req.query.search, "i") } }
+            { food: { $regex: new RegExp(req.query.search, "i") } }
           ]
     };
     

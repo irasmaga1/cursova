@@ -27,9 +27,9 @@ const productModalContent = `<form name="productForm" enctype="multipart/form-da
             <td class="form-input"><input type="number" name="productWeight" id="productWeight" class="form-control" required></td>
         </tr>
         <tr>
-            <td class="form-label"><label for="productMaterial">Type od feed:</label> </td>
+            <td class="form-label"><label for="productFood">Type od food:</label> </td>
             <td class="form-input">
-                <select name="productMaterial" id="productMaterial" class="form-select" required>
+                <select name="productFood" id="productFood" class="form-select" required>
                     <option>Dry food</option>
                     <option>Wet food</option>
                     <option>Food for bird</option>

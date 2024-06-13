@@ -19,7 +19,7 @@ export const cartCardRender = (item, index) => {
 
                             <div class="cart-product-info">
                                 <div class="cart-product-name">${item.product.name}</div>
-                                <div class="cart-product-material">${item.product.material}</div>
+                                <div class="cart-product-material">${item.product.food}</div>
                                 <div class="cart-product-volume">${item.product.weight} ml</div>
                                 <div class="cart-product-price">${item.product.price} &#x20b4 / pc</div>
                             </div>

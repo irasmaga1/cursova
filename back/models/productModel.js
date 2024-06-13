@@ -17,7 +17,7 @@ const productSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
-    material: {
+    food: {
         type: String,
         required: true,
     },

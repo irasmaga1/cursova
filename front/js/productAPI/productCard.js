@@ -20,7 +20,7 @@ export const productCardRender = (product) => {
                                         <div class="product-category"><div class="product-category-text">${category.name}</div></div>
                                         <div class="product-name">${product.name}</div>
                                         <div class="product-text">Weight: <span class="product-volume">${product.weight}</span> ml</div> 
-                                        <div class="product-text">Material: <span class="product-material">${product.material}</span></div>
+                                        <div class="product-text">Type of food: <span class="product-material">${product.food}</span></div>
                                             
                                     </div>`;
     const adminProductCardFooter = `  <div class="product-footer">
