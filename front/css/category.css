@@ -11,6 +11,11 @@
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    border: 3px solid #fb6f92;
+    border-radius: 20px;
+    height: 50px;
+    width: 300px;
+    background-color: white;
 }
 .category-name{
     width: 250px;
@@ -27,4 +32,16 @@
     /* padding: 0 10px; */
     cursor: pointer;
     font-size: 1.1rem;
+}
+#createCtgBtn,#submitCreateCategoryBtn,#removeProductBtn,#submitEditCategoryBtn{
+    border: 3px solid #fb6f92;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    height: 50px;
+}
+#removeProductBtn{
+    background-color: #fb6f92;
+    color: white;
+    width: 130px;
 }

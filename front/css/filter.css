@@ -15,11 +15,11 @@
     flex-wrap: wrap; /* Забезпечує однорядне розташування */
     justify-content: space-between; /* Вирівнює простір між елементами */
     align-items: center;
-    background-color: #f2f5f5;
+    background-color: #ffb3c6;
     margin: 0;
     padding: 4px 2px;
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
+    border-bottom: 3px solid #ff8fab;
+    border-top: 3px solid #ff8fab;
 }
 
 .filter-category, .filter-sort, .filter-search {
@@ -49,7 +49,7 @@
 
 .filter-search input, .filter-category select, .filter-sort select {
     border-radius: 20px;
-    border: 3px solid black;
+    border: 3px solid #fb6f92;
 }
 
 /* Медиа-запит для малих екранів */
@@ -67,5 +67,12 @@
     .filter-category select, .filter-sort select, .filter-search input {
         width: 100%; /* Максимальна ширина для select і input */
     }
+}
+
+#createBtn{
+    border: 3px solid #fb6f92;
+    border-radius: 20px;
+    background-color: #fb6f92;
+    color: white;
 }
 

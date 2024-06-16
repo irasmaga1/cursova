@@ -69,7 +69,7 @@ export const getAndShowAllProducts = async () => {
             else {
                 dataContainer.innerHTML = `<div class="empy-errors">
                     <div class="empy-errors-item">No products found </div>
-                    <!-- <div class="empy-errors-item">First - create some category,</div>
+                    <!-- <div class="empy-errors-item">Please create some category,</div>
                     <div class="empy-errors-item">then you'll be able to create products.</div> -->
                 </div>`
             }
