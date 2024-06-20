@@ -10,15 +10,16 @@
 /* Перевизначаємо папаметри bootstrap */
 
 .page-link {
-    color: #6c757d;
+    color: #ffc2d1;
     cursor: pointer;
+    
 }
 
 .page-link:hover {
-    color: #6c757d;
+    color: #fb6f92;
 }
 
 .page-item.active .page-link {
-    background-color: #6c757d;
-    border-color: #6c757d;
+    background-color: #ffc2d1;
+    border-color: #fb6f92;
 }

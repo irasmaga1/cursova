@@ -7,8 +7,6 @@
 body {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     background-image: url(../img/background_image.png);
-    background-size: cover;
-    /* Зображення масштабуватиметься, щоб повністю покрити фон */
     background-repeat: no-repeat;
     /* Зображення не повторюватиметься */
     background-position: center;
